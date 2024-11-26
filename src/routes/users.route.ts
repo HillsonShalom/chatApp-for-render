@@ -56,7 +56,7 @@ export const setPhoto = async (
     if (!fileInfo) {
       throw new Error('No file uploaded.')
     }
-    user.photo_url = 'http://localhost:8200/images/' + fileInfo.filename
+    user.photo_url = 'https://chatapp-for-render.onrender.com/images/' + fileInfo.filename
     await user.save()
   res.send(`File ${fileInfo.filename} uploaded successfully!`);
   } catch (error) {
