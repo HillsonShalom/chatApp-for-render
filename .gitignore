@@ -1,4 +1,3 @@
-node_modules
-public/images/[a-z0-9]*.*
-dist
-.env*
+node_modules/
+dist/
+.env
